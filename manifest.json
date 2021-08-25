@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Netflix Autoskip Intro",
+  "version": "1.0",
+
+  "description": "Überspringt automatisch die Intros bei Netflix",
+
+  "icons": {
+    "48": "icons/outline_skip_next_black_24dp.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["autoskip.js"]
+    }
+  ]
+
+}
